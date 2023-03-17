@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Install PIP
+
+sudo curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+
+python3 get-pip.py --user
+
+sleep 1m
+
+# Install Ansible
+
+python3 -m pip install --yes --user ansible
+
+sleep 1m
+
+# Export Ansible Install Directory to PATH
+
+export PATH="/home/ubuntu/.local/bin:$PATH"
+
+
+# End of script
